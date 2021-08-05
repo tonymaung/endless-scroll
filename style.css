@@ -1,52 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-html{
+html {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
-    height: 100vh;
     background-color: whitesmoke;
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 2.5rem;
     letter-spacing: 5px;
-
 }
+
+
 /* Loader */
-.loader{
+
+.loader {
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     background: rgba(255, 255, 255, 0.8);
+}
 
-}
-.loader img{
+.loader img {
     position: fixed;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
+
+
 /* Image container */
-.image-container{
-    margin: 10px 30%;
+
+.image-container {
+    margin: 0.625rem 30%;
 }
-.image-container img{
+
+.image-container img {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 0.625rem;
 }
+
+#footer {
+    position: relative;
+    margin-top: -100px;
+    /* negative value of footer height */
+    height: 150px;
+    clear: both;
+}
+
 
 /* Mobile view for images */
-@media screen and (max-width: 600px){
-    h1{
+
+@media screen and (max-width: 600px) {
+    h1 {
         font-size: 20px;
     }
-    .image-container{
+    .image-container {
         margin: 5px 10%;
     }
 }
